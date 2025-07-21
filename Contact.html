@@ -8,45 +8,64 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header class="header">
-        <nav class="navbar">
-            <div class="logo">
-                <h1>Pevicodo Paints</h1>
-            </div>
-            <ul class="menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html" class="active">Contact Us</a></li>
-            </ul>
-            <form class="search-bar" action="#" method="get">
-                <input type="text" placeholder="Search..." name="q">
-                <button type="submit"><i class="fas fa-search"></i></button>
-            </form>
-        </nav>
-    </header>
+    <div style="display: flex; justify-content: center; align-items: center; width: 100vw; min-height: 20vh;">
+        <header class="header" style="width: 100%; max-width: 900px;">
+            <nav class="navbar">
+                <div class="logo">
+                    <h1>Pevicodo Paints</h1>
+                </div>
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html" class="active">Contact Us</a></li>
+                </ul>
+                <form class="search-bar" action="#" method="get">
+                    <input type="text" placeholder="Search..." name="q">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </nav>
+        </header>
+    </div>
     <main>
-        <section class="hero animated-fade-in">
+        <section class="hero animated-fade-in" style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
             <div class="hero-content">
                 <h1>Contact Us</h1>
                 <h2>We'd Love to Hear from You</h2>
             </div>
         </section>
-        <section class="contact-section">
-            <div class="contact-info">
+        <section class="contact-section" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+            <div class="contact-info" style="text-align: center; margin-bottom: 2rem;">
                 <h3>Get in Touch</h3>
                 <p><i class="fas fa-phone"></i> +254 111818163</p>
                 <p><i class="fas fa-envelope"></i> info@pevicodopaints.com</p>
                 <p><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</p>
             </div>
-            <div class="contact-form">
-                <h3>Send Us a Message</h3>
-                <form action="#" method="post">
-                    <input type="text" name="name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your Email" required>
-                    <textarea name="message" placeholder="Your Message" required></textarea>
-                    <button type="submit" class="btn primary">Send Message</button>
+            <div class="contact-form" style="display: flex; flex-direction: column; align-items: center; width: 100%;">
+                <h3 style="text-align: center;">Send Us a Message</h3>
+                <form action="#" method="post" style="display: flex; flex-direction: column; align-items: center; width: 100%; max-width: 400px;">
+                    <input 
+                        type="text" 
+                        name="name" 
+                        placeholder="Your Name" 
+                        required 
+                        style="width: 100%; margin-bottom: 1rem; border-radius: 0.5rem; height: 2.8rem; padding: 0.75rem 1rem; background-color: #f0f0f0;"
+                    >
+                    <input 
+                        type="email" 
+                        name="email" 
+                        placeholder="Your Email" 
+                        required 
+                        style="width: 100%; margin-bottom: 1rem; border-radius: 0.5rem; height: 2.8rem; padding: 0.75rem 1rem; background-color: #f0f0f0;"
+                    >
+                    <textarea 
+                        name="message" 
+                        placeholder="Your Message" 
+                        required 
+                        style="width: 100%; margin-bottom: 1rem; border-radius: 0.5rem; min-height: 120px; padding: 0.75rem 1rem; background-color: #f0f0f0;"
+                    ></textarea>
+                    <button type="submit" class="btn primary" style="width: 100%;">Send Message</button>
                 </form>
             </div>
             <div class="map-placeholder">
